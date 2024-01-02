@@ -30,7 +30,7 @@ export const RESUME_DATA = {
     personalWebsiteUrl: "https://www.lawliet.ren",
     contact: {
       email: "coaixy@outlook.com",
-    // tel: "+48530213401",
+      tel: "",
       social: [
       {
           name: "GitHub",
