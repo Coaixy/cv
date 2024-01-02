@@ -58,6 +58,18 @@ export const RESUME_DATA = {
     // },
   ],
     work: [
+    {
+        company: "",
+        link: "",
+        badges: [
+        ""
+      ],
+        title: "",
+        logo: ParabolLogo,
+        start: "",
+        end: "",
+        description: "",
+    },
     // {
     //     company: "Parabol",
     //     link: "https://parabol.co",
@@ -110,23 +122,18 @@ export const RESUME_DATA = {
     "Java",
   ],
     projects: [
-    // {
-    //     title: "Consultly",
-    //     techStack: [
-    //     "Side Project",
-    //     "TypeScript",
-    //     "Next.js",
-    //     "Vite",
-    //     "GraphQL",
-    //     "WebRTC",
-    //   ],
-    //     description: "A platform to build and grow your online business",
-    //     logo: ConsultlyLogo,
-    //     link: {
-    //       label: "consultly.com",
-    //       href: "https://consultly.com/",
-    //   },
-    // },
+    {
+        title: "",
+        techStack: [
+        "",
+      ],
+        description: "",
+        logo: ConsultlyLogo,
+        link: {
+          label: "",
+          href: "",
+      },
+    },
     // {
     //     title: "Monito",
     //     techStack: [
