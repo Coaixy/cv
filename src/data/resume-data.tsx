@@ -51,69 +51,25 @@ export const RESUME_DATA = {
   },
     education: [
     {
-        school: "",
-        degree: "",
-        start: "",
-        end: "",
+        school: "Zhejiang 's University",
+        degree: "2",
+        start: "2022",
+        end: "----",
     },
   ],
     work: [
     {
-        company: "",
+        company: "NakPump",
         link: "",
         badges: [
         ""
       ],
-        title: "",
+        title: "Full Stack Developer",
         logo: ParabolLogo,
-        start: "",
-        end: "",
-        description: "",
+        start: "2019",
+        end: "Now",
+        description: "A Company to help student learn medicine",
     },
-    // {
-    //     company: "Parabol",
-    //     link: "https://parabol.co",
-    //     badges: [
-    //     "Remote"
-    //   ],
-    //     title: "Senior Full Stack Developer",
-    //     logo: ParabolLogo,
-    //     start: "2021",
-    //     end: "2024",
-    //     description: "Implemented new features, led squad, worked on improving the way developers ship the code, started migration from Emotion to Tailwind CSS and more. Technologies: React, TypeScript, GraphQL",
-    // },
-    // {
-    //     company: "Clevertech",
-    //     link: "https://clevertech.biz",
-    //     badges: [
-    //     "Remote"
-    //   ],
-    //     title: "Lead Android Developer → Full Stack Developer",
-    //     logo: ClevertechLogo,
-    //     start: "2015",
-    //     end: "2021",
-    //     description: "Created Android mobile apps and led teams for companies like Vision Media, DKMS, or AAA. Built live streaming application for Evercast from scratch. Technologies: Android, Kotlin, React, TypeScript, GraphQL",
-    // },
-    // {
-    //     company: "Jojo Mobile",
-    //     link: "https://bsgroup.eu/",
-    //     badges: [],
-    //     title: "Android Developer → Lead Android Developer",
-    //     logo: JojoMobileLogo,
-    //     start: "2012",
-    //     end: "2015",
-    //     description: "Built an Android team, created Android apps for biggest Polish companies like LOT, Polskie Radio, Agora, PolskaPress",
-    // },
-    // {
-    //     company: "Nokia Siemens Networks",
-    //     link: "https://www.nokia.com",
-    //     badges: [],
-    //     title: "C/C++ Developer",
-    //     logo: NSNLogo,
-    //     start: "2010",
-    //     end: "2012",
-    //     description: "Creating and testing software for LTE base stations",
-    // },
   ],
     skills: [
     "JavaScript",
@@ -123,15 +79,16 @@ export const RESUME_DATA = {
   ],
     projects: [
     {
-        title: "",
+        title: "Parasiter",
         techStack: [
-        "",
+        "TypeScript",
+        "React"
       ],
-        description: "",
+        description: "Parasiter是一个基于React + Typescript + SWC的前端项目，是一个用于医学生学习镜下形态学习的网站",
         logo: ConsultlyLogo,
         link: {
-          label: "",
-          href: "",
+          label: "github.com",
+          href: "https://github.com/Coaixy/Parasiter",
       },
     },
     // {
