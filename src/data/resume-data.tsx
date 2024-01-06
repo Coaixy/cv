@@ -91,35 +91,33 @@ export const RESUME_DATA = {
           href: "https://github.com/Coaixy/Parasiter",
       },
     },
-    // {
-    //     title: "Monito",
-    //     techStack: [
-    //     "Side Project",
-    //     "TypeScript",
-    //     "Next.js",
-    //     "Browser Extension"
-    //   ],
-    //     description: "Browser extension that records everything happening in a web application",
-    //     logo: MonitoLogo,
-    //     link: {
-    //       label: "monito.dev",
-    //       href: "https://monito.dev/",
-    //   },
-    // },
-    // {
-    //     title: "Jarocki.me",
-    //     techStack: [
-    //     "Side Project",
-    //     "Next.js",
-    //     "MDX"
-    //   ],
-    //     description: "My personal website and blog. Built with Next.js and Notion API",
-    //     logo: JarockiMeLogo,
-    //     link: {
-    //       label: "github.com",
-    //       href: "https://jarocki.me/",
-    //   },
-    // },
+    {
+        title: "Roop-WebUI-V",
+        techStack: [
+        "Vue.js",
+        "TypeScript",
+        "daisyui"
+      ],
+        description: "Roop WebUI V是一个基于Vue.js + TypeScript + daisyui的前端项目，Roop AI换脸的前端项目",
+        logo: MonitoLogo,
+        link: {
+          label: "github.com",
+          href: "https://github.com/Coaixy/Roop-WebUI-V",
+      },
+    },
+    {
+        title: "RunnyPush",
+        techStack: [
+        "Rust",
+        "Actix-web",
+      ],
+        description: "RunnyPush是一个基于Rust + Actix-web的后端项目，用于获取杭州电子科技大学等阳光长跑数据.",
+        logo: JarockiMeLogo,
+        link: {
+          label: "github.com",
+          href: "https://github.com/JHCSTU/RunnyPush",
+      },
+    },
     // {
     //     title: "Minimal",
     //     techStack: [
