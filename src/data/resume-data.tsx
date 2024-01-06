@@ -52,7 +52,7 @@ export const RESUME_DATA = {
     education: [
     {
         school: "Zhejiang 's University",
-        degree: "2",
+        degree: "Clinical Laboratory Technology",
         start: "2022",
         end: "----",
     },
