@@ -21,13 +21,13 @@ import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
     name: "Coaixy",
-    initials: "CYJ",
-    location: "ZheJiang,China",
-    locationLink: "https://www.google.com/maps/place/%E4%B8%AD%E5%9B%BD%E6%B5%99%E6%B1%9F%E7%9C%81",
-    about: "Full Stack Engineer focused on building products with extra attention to detail",
-    summary: "As a Full Stack Engineer, I have successfully taken multiple products from 0 to 1. I lead teams effectively, ensuring an environment where people can do their best work. Currently, I work mostly with TypeScript, React, Node.js, and GraphQL. I have over 8 years of experience in working remotely with companies all around the world.",
+    initials: "Chen",
+    location: "China",
+    locationLink: "https://www.google.com/maps/place/%E4%B8%AD%E5%9B%BD",
+    about: "全栈工程师",
+    summary: "Next.js React Python SpringBoot",
     avatarUrl: "https://q1.qlogo.cn/g?b=qq&nk=3045831167&s=640",
-    personalWebsiteUrl: "https://www.lawliet.ren",
+    personalWebsiteUrl: "https://www.diviner.fun",
     contact: {
       email: "coaixy@outlook.com",
       tel: "",
@@ -59,63 +59,64 @@ export const RESUME_DATA = {
   ],
     work: [
     {
-        company: "NakPump",
+        company: "AiDiviner",
         link: "",
         badges: [
         ""
       ],
-        title: "Full Stack Developer",
-        logo: ParabolLogo,
-        start: "2019",
+        title: "Front-end Engineer | AIGC Enginner",
+        logo: GitHubIcon,
+        start: "2024",
         end: "Now",
-        description: "A Company to help student learn medicine",
+        description: "通过现代科技与古老玄学的结合，探索未知的世界。",
     },
   ],
     skills: [
     "JavaScript",
     "TypeScript",
-    "Node.js",
     "Java",
+      "Python",
   ],
     projects: [
     {
-        title: "Parasiter",
+        title: "AI-Diviner-Server",
         techStack: [
-        "TypeScript",
-        "React"
+        "Spring Boot",
+        "MySql",
+          "Java",
+          "Redis"
       ],
-        description: "Parasiter是一个基于React + Typescript + SWC的前端项目，是一个用于医学生学习镜下形态学习的网站",
+        description: "AI-Diviner-Server通过使用DeepSeek R1模型和GLM模型对占卜进行简易的解读",
         logo: ConsultlyLogo,
         link: {
           label: "github.com",
-          href: "https://github.com/Coaixy/Parasiter",
+          href: "https://github.com/AI-Diviner/AI-Diviner-Server",
       },
     },
+    // {
+    //     title: "Roop-WebUI-V",
+    //     techStack: [
+    //     "Vue.js",
+    //     "TypeScript",
+    //     "daisyui"
+    //   ],
+    //     description: "Roop WebUI V是一个基于Vue.js + TypeScript + daisyui的前端项目，Roop AI换脸的前端项目",
+    //     logo: MonitoLogo,
+    //     link: {
+    //       label: "github.com",
+    //       href: "https://github.com/Coaixy/Roop-WebUI-V",
+    //   },
+    // },
     {
-        title: "Roop-WebUI-V",
+        title: "WeiBan-Tool",
         techStack: [
-        "Vue.js",
-        "TypeScript",
-        "daisyui"
+        "Python",
       ],
-        description: "Roop WebUI V是一个基于Vue.js + TypeScript + daisyui的前端项目，Roop AI换脸的前端项目",
-        logo: MonitoLogo,
-        link: {
-          label: "github.com",
-          href: "https://github.com/Coaixy/Roop-WebUI-V",
-      },
-    },
-    {
-        title: "RunnyPush",
-        techStack: [
-        "Rust",
-        "Actix-web",
-      ],
-        description: "RunnyPush是一个基于Rust + Actix-web的后端项目，用于获取杭州电子科技大学等阳光长跑数据.",
+        description: "基于Python打造的微伴辅助工具，支持自动登录、自动刷课、题库提取、自动答题等功能。",
         logo: JarockiMeLogo,
         link: {
           label: "github.com",
-          href: "https://github.com/JHCSTU/RunnyPush",
+          href: "https://github.com/Coaixy/weiban-tool",
       },
     },
     // {
