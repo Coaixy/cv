@@ -20,11 +20,11 @@ import {
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
-    name: "Coaixy",
+    name: "三合木",
     initials: "Chen",
     location: "China",
     locationLink: "https://www.google.com/maps/place/%E4%B8%AD%E5%9B%BD",
-    about: "",
+    about: "木长生在亥，帝旺在卯，墓库在未。",
     summary: "阴阳顺逆妙难穷，二至还归一九宫，若能了达阴阳理，天地都在一掌中.",
     avatarUrl: "https://q1.qlogo.cn/g?b=qq&nk=3045831167&s=640",
     personalWebsiteUrl: "https://www.letfate.com",
