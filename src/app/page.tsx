@@ -25,6 +25,7 @@ export default function Page() {
               {RESUME_DATA.about}
             </p>
         </div>
+          </div>
         <Section>
           <p className="text-pretty font-mono text-sm text-muted-foreground">
             {RESUME_DATA.summary}
