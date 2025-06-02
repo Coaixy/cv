@@ -25,6 +25,10 @@ export default function Page() {
               {RESUME_DATA.about}
             </p>
         </div>
+                    <Avatar className="h-28 w-28">
+            <AvatarImage alt={RESUME_DATA.name} src={RESUME_DATA.avatarUrl} />
+            <AvatarFallback>{RESUME_DATA.initials}</AvatarFallback>
+          </Avatar>
           </div>
         <Section>
           <p className="text-pretty font-mono text-sm text-muted-foreground">
