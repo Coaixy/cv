@@ -36,7 +36,7 @@ export default function Page() {
           </p>
         </Section>
         <Section className="print-force-new-page scroll-mb-16">
-          <h2 className="text-xl font-bold">项目导航</h2>
+          <h2 className="text-xl font-bold">项目列表：点击项目即可跳转</h2>
           <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
             {RESUME_DATA.projects.map((project) => {
               return (
