@@ -94,17 +94,22 @@ export const RESUME_DATA = {
           label: "github.com",
           href: "https://ai.letfate.com",
       },
-    }]
-    // {
-    //     title: "WeiBan-Tool",
-    //     techStack: [
-    //     "Python",
-    //   ],
-    //     description: "基于Python打造的微伴辅助工具，支持自动登录、自动刷课、题库提取、自动答题等功能。",
-    //     logo: JarockiMeLogo,
-    //     link: {
-    //       label: "github.com",
-    //       href: "https://github.com/Coaixy/weiban-tool",
-    //   },
-    // },
+    },{
+        title: "玄学宝典",
+        techStack: [
+        "六爻",
+        "梅花易数",
+        "奇门遁甲",
+          "紫微斗数",
+          "大六壬",
+          "四柱"
+      ],
+        description: "基于Vite实现的玄学知识库 许多玄学书籍可以免费查阅",
+        logo: ConsultlyLogo,
+        link: {
+          label: "github.com",
+          href: "https://book.letfate.com",
+      },
+    }
+    ]
 } as const;
