@@ -52,7 +52,17 @@ export default function Page() {
           </div>
         </Section>
       </section>
-
+    {/* 添加备案信息 */}
+        <footer className="py-6 text-center text-sm text-muted-foreground print:hidden">
+          <a 
+            href="https://beian.miit.gov.cn/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            浙ICP备2024132053号-1
+          </a>
+        </footer>
     </main>
   );
 }
