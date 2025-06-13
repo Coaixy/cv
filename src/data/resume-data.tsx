@@ -20,22 +20,22 @@ import {
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
-    name: "三合木",
-    initials: "Chen",
-    location: "China",
-    locationLink: "https://www.google.com/maps/place/%E4%B8%AD%E5%9B%BD",
-    about: "奕的作品集",
-    summary: "阴阳顺逆妙难穷，二至还归一九宫，若能了达阴阳理，天地都在一掌中.",
-    avatarUrl: "https://q1.qlogo.cn/g?b=qq&nk=3045831167&s=640",
-    personalWebsiteUrl: "https://www.letfate.com",
-    contact: {
-      email: "coaixy@qq.com",
-      tel: "",
-      social: [
+  name: "三合木",
+  initials: "Chen",
+  location: "China",
+  locationLink: "https://www.google.com/maps/place/%E4%B8%AD%E5%9B%BD",
+  about: "奕的作品集",
+  summary: "阴阳顺逆妙难穷，二至还归一九宫，若能了达阴阳理，天地都在一掌中.",
+  avatarUrl: "https://q1.qlogo.cn/g?b=qq&nk=3045831167&s=640",
+  personalWebsiteUrl: "https://www.letfate.com",
+  contact: {
+    email: "coaixy@qq.com",
+    tel: "",
+    social: [
       {
-          name: "GitHub",
-          url: "https://github.com/Coaixy",
-          icon: GitHubIcon,
+        name: "GitHub",
+        url: "https://github.com/Coaixy",
+        icon: GitHubIcon,
       },
       // {
       //     name: "LinkedIn",
@@ -49,67 +49,51 @@ export const RESUME_DATA = {
       // },
     ],
   },
-    education: [
+  education: [
     {
-        school: "Zhejiang 's University",
-        degree: "Clinical Medicine",
-        start: "2022",
-        end: "----",
+      school: "Zhejiang 's University",
+      degree: "Clinical Medicine",
+      start: "2022",
+      end: "----",
     },
   ],
-    work: [
+  work: [
     {
-        company: "通枢AI",
-        link: "",
-        badges: [
+      company: "通枢AI",
+      link: "",
+      badges: [
         ""
       ],
-        title: "Front-end Engineer | AIGC Enginner",
-        logo: GitHubIcon,
-        start: "2024",
-        end: "Now",
-        description: "通过现代科技与古老玄学的结合，探索未知的世界。",
+      title: "Front-end Engineer | AIGC Enginner",
+      logo: GitHubIcon,
+      start: "2024",
+      end: "Now",
+      description: "通过现代科技与古老玄学的结合，探索未知的世界。",
     },
   ],
-    skills: [
+  skills: [
     "TypeScript",
     "Java",
     "Python",
     "六爻",
   ],
-    projects: [
+  projects: [
     {
-        title: "通枢AI",
-        techStack: [
+      title: "灵钥通枢 - AI",
+      techStack: [
         "六爻",
         "梅花易数",
         "奇门遁甲",
-          "紫微斗数",
-          "大六壬",
-          "四柱"
+        "紫微斗数",
+        "大六壬",
+        "四柱"
       ],
-        description: "通枢AI通过使用DeepSeek Distill技术实现传统术数的AI占断分析",
-        logo: ConsultlyLogo,
-        link: {
-          label: "github.com",
-          href: "https://ai.letfate.com",
-      },
-    },{
-        title: "玄学宝典",
-        techStack: [
-        "六爻",
-        "梅花易数",
-        "奇门遁甲",
-          "紫微斗数",
-          "大六壬",
-          "四柱"
-      ],
-        description: "基于Vite实现的玄学知识库 许多玄学书籍可以免费查阅",
-        logo: ConsultlyLogo,
-        link: {
-          label: "github.com",
-          href: "https://book.letfate.com",
+      description: "LetFate倾心打造的AI思维链,融合了六爻、梅花易数、紫薇斗数、大六壬、奇门遁甲等传统术数",
+      logo: ConsultlyLogo,
+      link: {
+        label: "github.com",
+        href: "https://ai.letfate.com",
       },
     }
-    ]
+  ]
 } as const;

@@ -1,69 +1,85 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Card, CardHeader, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { CommandMenu } from "@/components/command-menu";
 import { Metadata } from "next";
 import { Section } from "@/components/ui/section";
-import { GlobeIcon, MailIcon, PhoneIcon, Sparkles, Code, Layers } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Sparkles, Code, Layers } from "lucide-react";
 import { RESUME_DATA } from "@/data/resume-data";
 import { ProjectCard } from "@/components/project-card";
 
 export const metadata: Metadata = {
-  title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
-  description: RESUME_DATA.summary,
+  title: "小奕想要三合木 ｜ 奕的作品集",
+  keywords: "灵钥通枢,灵启天玑,ai梅花,ai奇门,ai塔罗,ai雷诺曼,ai八字,ai算命," +
+    "ai占卜, ai风水, ai八卦, ai易经, ai紫微斗数, ai奇门遁甲, ai六爻,六爻解忧,赛博占卜,灵爻妙解,鬼谷奇门",
+  description: "​灵钥通枢（https://ai.letfate.com/）是全网首家免费的AI思维链占卜网站，融合了六爻、梅花易数等传统占卜术数，运用人工智能技术，为用户提供精准、便捷的占卜服务",
+  appleWebApp: true
 };
 
 export default function Page() {
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-br from-slate-50 to-white">
-      <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16 flex-grow">
-        <div className="absolute top-[-50px] right-[-50px] w-80 h-80 bg-blue-100 rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
-        <div className="absolute bottom-[-50px] left-[-50px] w-80 h-80 bg-purple-100 rounded-full filter blur-3xl opacity-20 animate-pulse" style={{ animationDelay: "2s" }}></div>
-        
-        <section className="mx-auto w-full max-w-2xl space-y-8 bg-white/80 backdrop-blur-sm print:space-y-6 rounded-xl shadow-md p-6 border border-slate-100 relative z-10 transition-all hover:shadow-lg">
+    <div className="relative flex min-h-screen flex-col items-center justify-center bg-slate-900 text-white overflow-hidden">
+      {/* Background Glows */}
+      <div className="absolute top-[-20%] right-[-20%] w-[60vw] h-[60vw] max-w-[700px] max-h-[700px] bg-sky-500/20 rounded-full filter blur-3xl animate-pulse"></div>
+      <div className="absolute bottom-[-20%] left-[-20%] w-[60vw] h-[60vw] max-w-[700px] max-h-[700px] bg-fuchsia-500/20 rounded-full filter blur-3xl animate-pulse" style={{ animationDelay: "2s" }}></div>
+
+      <main className="flex-1 flex items-center justify-center p-4 z-10 w-full">
+        <section className="mx-auto w-full max-w-2xl space-y-8 rounded-2xl bg-black/30 p-8 backdrop-blur-lg">
           <div className="flex items-center justify-between">
             <div className="flex-1 space-y-1.5">
-              <h1 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+              <h1 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-fuchsia-500">
                 {RESUME_DATA.name}
               </h1>
-              <p className="max-w-md text-pretty font-mono text-sm text-muted-foreground">
-                {RESUME_DATA.about}
-              </p>
             </div>
-            <Avatar className="h-28 w-28 border-2 border-muted shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg">
+            <Avatar className="h-24 w-24 border-2 border-white/10 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-fuchsia-500/10">
               <AvatarImage alt={RESUME_DATA.name} src={RESUME_DATA.avatarUrl} />
               <AvatarFallback>{RESUME_DATA.initials}</AvatarFallback>
             </Avatar>
           </div>
           
-          <Section className="bg-slate-50/80 p-5 rounded-lg border border-slate-100 shadow-sm hover:shadow transition-all duration-300">
-            <div className="flex items-start gap-2">
-              <Sparkles className="h-5 w-5 text-blue-500 mt-0.5 flex-shrink-0" />
-              <p className="text-pretty font-mono text-sm text-muted-foreground">
-                {RESUME_DATA.summary}
-              </p>
-            </div>
-          </Section>
+          <div className="flex items-start gap-4 rounded-lg bg-slate-500/10 p-4 border border-white/20">
+            <Sparkles className="h-6 w-6 text-sky-400 mt-0.5 flex-shrink-0" />
+            <p className="text-pretty font-mono text-sm text-slate-300">
+              {RESUME_DATA.summary}
+            </p>
+          </div>
           
           <Section className="print-force-new-page scroll-mb-16">
-            <div className="flex items-center gap-2 mb-4 pb-2 border-b">
-              <Code className="h-5 w-5 text-purple-500" />
-              <h2 className="text-xl font-bold">个人项目导航</h2>
+            <div className="flex items-center gap-3 mb-4 pb-3 border-b border-white/20">
+              <Code className="h-5 w-5 text-fuchsia-400" />
+              <h2 className="text-xl font-semibold">AI导航</h2>
             </div>
-            <div className="-mx-3 grid grid-cols-1 gap-4 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
+            <div className="-mx-2 grid grid-cols-1 gap-6 md:grid-cols-2">
               {RESUME_DATA.projects.map((project, index) => {
+                const projectLink = "link" in project ? project.link.href : undefined;
+
+                if (projectLink) {
+                  return (
+                    <a
+                      key={project.title}
+                      href={projectLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block group transition-all duration-300 hover:-translate-y-1"
+                      style={{ animationDelay: `${index * 0.1}s` }}
+                    >
+                      <ProjectCard
+                        title={project.title}
+                        description={project.description}
+                        tags={project.techStack}
+                        link={projectLink}
+                      />
+                    </a>
+                  );
+                }
+
                 return (
-                  <div 
-                    key={project.title} 
-                    className="transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
+                  <div
+                    key={project.title}
+                    className="block group transition-all duration-300"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
                     <ProjectCard
                       title={project.title}
                       description={project.description}
                       tags={project.techStack}
-                      link={"link" in project ? project.link.href : undefined}
                     />
                   </div>
                 );
@@ -73,17 +89,16 @@ export default function Page() {
         </section>
       </main>
       
-      {/* 添加备案信息 */}
-      <footer className="w-full py-4 text-center text-xs text-muted-foreground bg-white/50 backdrop-blur-sm border-t print:hidden mt-auto transition-colors duration-300 hover:bg-white/80">
+      <footer className="w-full py-4 text-center text-xs text-slate-400 z-10 print:hidden">
         <div className="container mx-auto flex justify-center items-center">
           <a 
             href="https://beian.miit.gov.cn/" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="hover:underline transition-colors hover:text-blue-500 flex items-center gap-1"
+            className="hover:underline transition-colors hover:text-sky-400 flex items-center gap-1.5"
           >
-            <Layers className="h-3 w-3" />
-            浙ICP备2024132053号-1
+            <Layers className="h-3.5 w-3.5" />
+            浙ICP备2024132053号
           </a>
         </div>
       </footer>
