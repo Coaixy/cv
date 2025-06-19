@@ -15,35 +15,35 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <div className="relative flex min-h-screen flex-col items-center justify-center bg-slate-900 text-white overflow-hidden">
+    <div className="relative flex min-h-screen flex-col items-center justify-center bg-slate-50 text-slate-800 overflow-hidden">
       {/* Background Glows */}
-      <div className="absolute top-[-20%] right-[-20%] w-[60vw] h-[60vw] max-w-[700px] max-h-[700px] bg-sky-500/20 rounded-full filter blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-[-20%] left-[-20%] w-[60vw] h-[60vw] max-w-[700px] max-h-[700px] bg-fuchsia-500/20 rounded-full filter blur-3xl animate-pulse" style={{ animationDelay: "2s" }}></div>
+      <div className="absolute top-[-20%] right-[-20%] w-[60vw] h-[60vw] max-w-[700px] max-h-[700px] bg-sky-500/10 rounded-full filter blur-3xl animate-pulse"></div>
+      <div className="absolute bottom-[-20%] left-[-20%] w-[60vw] h-[60vw] max-w-[700px] max-h-[700px] bg-fuchsia-500/10 rounded-full filter blur-3xl animate-pulse" style={{ animationDelay: "2s" }}></div>
 
       <main className="flex-1 flex items-center justify-center p-4 z-10 w-full">
-        <section className="mx-auto w-full max-w-2xl space-y-8 rounded-2xl bg-black/30 p-8 backdrop-blur-lg">
+        <section className="mx-auto w-full max-w-2xl space-y-8 rounded-2xl bg-white/50 p-8 backdrop-blur-lg border border-slate-200 shadow-lg">
           <div className="flex items-center justify-between">
             <div className="flex-1 space-y-1.5">
-              <h1 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-fuchsia-500">
+              <h1 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-fuchsia-600">
                 {RESUME_DATA.name}
               </h1>
             </div>
-            <Avatar className="h-24 w-24 border-2 border-white/10 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-fuchsia-500/10">
+            <Avatar className="h-24 w-24 border-2 border-white/50 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-fuchsia-500/20">
               <AvatarImage alt={RESUME_DATA.name} src={RESUME_DATA.avatarUrl} />
               <AvatarFallback>{RESUME_DATA.initials}</AvatarFallback>
             </Avatar>
           </div>
           
-          <div className="flex items-start gap-4 rounded-lg bg-slate-500/10 p-4 border border-white/20">
-            <Sparkles className="h-6 w-6 text-sky-400 mt-0.5 flex-shrink-0" />
-            <p className="text-pretty font-mono text-sm text-slate-300">
+          <div className="flex items-start gap-4 rounded-lg bg-slate-400/10 p-4 border border-slate-200/80">
+            <Sparkles className="h-6 w-6 text-sky-500 mt-0.5 flex-shrink-0" />
+            <p className="text-pretty font-mono text-sm text-slate-600">
               {RESUME_DATA.summary}
             </p>
           </div>
           
           <Section className="print-force-new-page scroll-mb-16">
-            <div className="flex items-center gap-3 mb-4 pb-3 border-b border-white/20">
-              <Code className="h-5 w-5 text-fuchsia-400" />
+            <div className="flex items-center gap-3 mb-4 pb-3 border-b border-slate-200/80">
+              <Code className="h-5 w-5 text-fuchsia-500" />
               <h2 className="text-xl font-semibold">AI导航</h2>
             </div>
             <div className="-mx-2 grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -57,7 +57,7 @@ export default function Page() {
                       href={projectLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block group transition-all duration-300 hover:-translate-y-1"
+                      className="block group transition-all duration-300 hover:-translate-y-1 animate-pop-in"
                       style={{ animationDelay: `${index * 0.1}s` }}
                     >
                       <ProjectCard
@@ -73,7 +73,7 @@ export default function Page() {
                 return (
                   <div
                     key={project.title}
-                    className="block group transition-all duration-300"
+                    className="block group transition-all duration-300 animate-pop-in"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
                     <ProjectCard
@@ -89,13 +89,13 @@ export default function Page() {
         </section>
       </main>
       
-      <footer className="w-full py-4 text-center text-xs text-slate-400 z-10 print:hidden">
+      <footer className="w-full py-4 text-center text-xs text-slate-500 z-10 print:hidden">
         <div className="container mx-auto flex justify-center items-center">
           <a 
             href="https://beian.miit.gov.cn/" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="hover:underline transition-colors hover:text-sky-400 flex items-center gap-1.5"
+            className="hover:underline transition-colors hover:text-sky-500 flex items-center gap-1.5"
           >
             <Layers className="h-3.5 w-3.5" />
             浙ICP备2024132053号
